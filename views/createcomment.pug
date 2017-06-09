@@ -1,0 +1,12 @@
+html
+	include components/head.pug
+	body
+		form(action="/api/comment" method="post")
+			input(type="text" name="username" placeholder="Username")
+			br
+			br
+			input(type="text" name="body" placeholder="Body")
+			br
+			br
+			input(type="submit" value="Create Comment" )
+		include components/foot.pug
